@@ -1,0 +1,408 @@
+@import url("fonts/lato/lato.css");
+@import url("fonts/rubik/rubik.css");
+@import url("fonts/opensans/opensans.css");
+
+*, *:before, *:after{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background: #FAFAFA;
+
+    font-family: "Lato", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1{
+    font-family: "Rubik", serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 56px;
+    color: #4F4F4F;
+}
+
+section h1{
+    margin-bottom: 30px;
+}
+
+input{
+    font-family: 'Lato', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+select{
+    background-color: transparent;
+    outline: 0;
+
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+
+    color: #4F4F4F;
+
+    border: none;
+}
+
+header{
+    padding: 30px 0;
+    max-width: 500px;
+
+    margin-bottom: 95px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header label{
+    border-bottom: 1px dashed #4F4F4F;
+    height: 24px;
+    margin: auto 0;
+}
+
+
+footer{
+    background: #333333;
+    padding: 70px 0;
+}
+
+.background{
+    z-index: -100;
+    position: absolute;
+}
+
+.background div{
+    transform-origin: top left;
+}
+
+.bg-square1{
+    position: absolute;
+    width: 577px;
+    height: 577px;
+    left: 752px;
+    top: 209px;
+
+    background: #CCE1F6;
+    border-radius: 40px;
+    transform: rotate(-135deg);
+}
+.bg-square2{
+    position: absolute;
+    width: 679px;
+    height: 679px;
+    left: 1145px;
+    top: 511px;
+
+    background: #FFFFFF;
+    border-radius: 40px;
+    transform: rotate(-135deg);
+}
+.bg-square3{
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    left: 1428px;
+    top: 321px;
+
+    background: #CCE1F6;
+    border-radius: 20px;
+    transform: rotate(-135deg);
+}
+.bg-square4{
+    position: absolute;
+    width: 577px;
+    height: 577px;
+    left: 1428px;
+    top: 511px;
+
+    background: #0067D0;
+    border-radius: 40px;
+    transform: rotate(-135deg);
+}
+.bg-image1{
+    position: absolute;
+    width: 299px;
+    height: 472px;
+    left: 998px;
+    top: 3px;
+
+    background-image: url("img/девушка 1.png");
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1200px;
+}
+
+.first-section{
+    margin: 110px 0;
+}
+
+.first-section-title{
+    max-width: 500px;
+}
+
+.search-form {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    border-radius: 6px;
+    max-width: 800px;
+    height: 62px;
+}
+
+.search-form label{
+    display: flex;
+}
+
+.loupe{
+    margin: 19px 20px 19px 30px;
+}
+
+.search-form-text-field{
+    width: 100%;
+}
+
+.search-form-button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    padding: 17px 32px;
+
+    margin: 4px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: #4F4F4F;
+    border-radius: 4px;
+}
+
+.search-form-button:hover{
+    cursor: pointer;
+}
+
+.technology_container{
+    display: flex;
+    flex-flow: wrap;
+    margin: -20px -10px;
+}
+
+.technology_box{
+    flex: 1 1 auto;
+    margin: 20px 10px;
+    padding: 40px;
+    max-width: 300px;
+    min-height: 240px;
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+.technology_box img{
+    margin-bottom: 20px;
+}
+
+.technology_box h3{
+    margin-bottom: 16px;
+}
+
+.technology_box h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+    letter-spacing: 0.04em;
+
+    color: #4F4F4F;
+}
+
+.technology_box p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+
+    letter-spacing: 0.04em;
+
+    color: #0067D0;
+}
+
+.technology_more {
+    margin: 50px auto 70px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 190px;
+    border-bottom: 1px dashed #828282;
+}
+
+.technology_more p{
+    font-weight: 700;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #828282;
+}
+
+.efficiency-stats-container{
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.efficiency-stats-bg1{
+    position: absolute;
+    background: #B5DAFF;
+    border-radius: 10px;
+    bottom: -10px;
+    left: 2%;
+
+    width: 96%;
+    height: 20px;
+
+    z-index: -1;
+}
+
+.efficiency-stats-bg2{
+    position: absolute;
+    background: #E0F0FF;
+    border-radius: 10px;
+    bottom: -20px;
+    left: 4%;
+
+    width: 92%;
+    height: 20px;
+
+    z-index: -2;
+}
+
+.efficiency-stats{
+    display: flex;
+    flex-wrap: wrap;
+
+    color: #fff;
+    background: #0067D0;
+    border-radius: 20px;
+    padding: 75px 90px 45px 90px;
+}
+
+.efficiency-stats > *{
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.efficiency-stats h2, .efficiency-stats h2 span{
+    font-family: 'Rubik', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+
+    max-width: 475px;
+
+    color: #FFFFFF;
+}
+
+.efficiency-stats h2 span{
+    font-weight: 400;
+}
+
+.efficiency-stats p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+    max-width: 250px;
+}
+
+.efficiency-stats-small{
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.efficiency-stats-small span{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+}
+
+.horizontal-line{
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.21);
+}
+
+.footer, .footer a{
+    color: #E0E0E0;
+}
+
+.footer-line a{
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.webstyle-logo{
+    height: 30px;
+}
+
+.footer_inner{
+    margin: 0 -10px 30px -10px;
+    display: flex;
+}
+
+.footer_inner > *{
+    flex: 1 1 auto;
+    margin: auto 10px auto 10px;
+}
+
+.footer-text{
+    max-width: 192px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.horizontal-footer-line{
+    width: 1px;
+    height: 100%;
+    background-color: #4F4F4F;
+}
+
+.footer-line{
+    display: flex;
+    margin: 0 -10px;
+    justify-content: space-between;
+    max-width: 920px;
+}
+
+.footer-line a{
+    margin: 0 10px;
+}
+
